@@ -22,6 +22,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/Vue3Ref">Vue3響應式核心基礎操作</RouterLink>
         <RouterLink to="/Vue3Lifetime">Vue3 生命週期</RouterLink>
         <RouterLink to="/parent/child1?id=1">Vue3 父子Router路由</RouterLink>
+        <RouterLink to="/Vue3Pinia">Vue3 Pinia</RouterLink>
       </nav>
     </div>
   </header>

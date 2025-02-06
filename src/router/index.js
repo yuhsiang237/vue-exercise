@@ -5,6 +5,7 @@ import Vue3Lifetime from "../views/Vue3Lifetime.vue";
 import ParentView from "../views/ParentView.vue";
 import Children1View from "../views/Children1View.vue";
 import Children2View from "../views/Children2View.vue";
+import Vue3Pinia from "../views/Vue3Pinia.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: "/Vue3Lifetime",
       name: "Vue3Lifetime",
       component: Vue3Lifetime,
+    },
+    {
+      path: "/Vue3Pinia",
+      name: "Vue3Pinia",
+      component: Vue3Pinia,
     },
     {
       path: "/parent",
