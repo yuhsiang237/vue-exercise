@@ -24,6 +24,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/parent/child1?id=1">Vue3 父子Router路由</RouterLink>
         <RouterLink to="/Vue3Pinia">Vue3 Pinia</RouterLink>
         <RouterLink to="/CustomComponent">客製化元件</RouterLink>
+        <RouterLink to="/JSES6">JS ES6+常用操作</RouterLink>
       </nav>
     </div>
   </header>

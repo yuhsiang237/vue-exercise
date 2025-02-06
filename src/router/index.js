@@ -7,6 +7,7 @@ import Children1View from "../views/Children1View.vue";
 import Children2View from "../views/Children2View.vue";
 import Vue3Pinia from "../views/Vue3Pinia.vue";
 import CustomComponent from "../views/CustomComponent.vue";
+import JSES6 from "../views/JSES6.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,11 @@ const router = createRouter({
       path: "/Vue3Pinia",
       name: "Vue3Pinia",
       component: Vue3Pinia,
+    },
+    {
+      path: "/JSES6",
+      name: "JSES6",
+      component: JSES6,
     },
     {
       path: "/parent",
