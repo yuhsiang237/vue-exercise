@@ -20,6 +20,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/Vue3Ref">Vue3響應式核心基礎操作</RouterLink>
+        <RouterLink to="/Vue3Lifetime">Vue3 生命週期</RouterLink>
       </nav>
     </div>
   </header>
