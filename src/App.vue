@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
@@ -14,13 +13,10 @@ import HelloWorld from "./components/HelloWorld.vue";
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/Vue3Ref">Vue3響應式核心基礎操作</RouterLink>
-        <RouterLink to="/Vue3Lifetime">Vue3 生命週期</RouterLink>
-        <RouterLink to="/parent/child1?id=1">Vue3 父子Router路由</RouterLink>
+        <RouterLink to="/Vue3Lifetime">Vue3生命週期</RouterLink>
+        <RouterLink to="/parent/child1?id=1">Vue3父子Router路由</RouterLink>
         <RouterLink to="/Vue3Pinia">Vue3 Pinia</RouterLink>
         <RouterLink to="/CustomComponent">客製化元件</RouterLink>
         <RouterLink to="/JSES6">JS ES6+常用操作</RouterLink>
