@@ -2,13 +2,13 @@ import { describe, it, expect } from "vitest";
 import JSES6 from "../../views/JSES6.vue";
 
 // 測試方式npx vitest --testNamePattern="processAPIVersionData 測試"
-describe('processAPIVersionData 測試', () => {
-  it('應該格式化並返回正確的字串', () => {
+describe("processAPIVersionData 測試", () => {
+  it("應該格式化並返回正確的字串", () => {
     // 測資
     const input = [
       {
-        "name": "API1",
-        "version": "1.1.0"
+        name: "API1",
+        version: "1.1.0",
       },
     ];
     // 測試

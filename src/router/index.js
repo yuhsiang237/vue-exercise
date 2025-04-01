@@ -9,13 +9,19 @@ import Vue3Pinia from "../views/Vue3Pinia.vue";
 import CustomComponent from "../views/CustomComponent.vue";
 import JSES6 from "../views/JSES6.vue";
 import CSSView from "../views/CSSView.vue";
+import VueTestMe from "../views/VueTestMe.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      redirect: '/Vue3Ref'
+      path: "/",
+      redirect: "/Vue3Ref",
+    },
+    {
+      path: "/VueTestMe",
+      name: "VueTestMe",
+      component: VueTestMe,
     },
     {
       path: "/Vue3Ref",
