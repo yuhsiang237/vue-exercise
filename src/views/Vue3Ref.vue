@@ -13,8 +13,7 @@ https://cn.vuejs.org/api/reactivity-core.html
     a : {{ count.counter.current }}<br/>
     <button @click="countHandler">+1</button>
     <h2>2.reactive操作響應式變數</h2>
-    <div>reactive用於多層物件，與ref差別在不用.value去取值設定
-        <br/>
+    <div>reactive用於多層物件，與ref差別在不用.value去取值設定<br/>
       點擊按鈕，數值會+1
     </div>
     b : {{ count2.counter.current }}<br/>
