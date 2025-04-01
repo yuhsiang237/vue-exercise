@@ -1,4 +1,5 @@
 # vue-exercise
+![workflow](https://github.com/yuhsiang237/vue-exercise/actions/workflows/node.js.yml/badge.svg)
 
 This template should help get you started developing with Vue 3 in Vite.
 
