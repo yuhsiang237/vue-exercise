@@ -10,15 +10,19 @@ https://cn.vuejs.org/api/reactivity-core.html
       ref用於單一值，若為物件建議可用reactive，差別在不用.value去取值設定<br/>
       點擊按鈕，數值會+1
     </div>
-    <button @click="countHandler">{{ count.counter.current }}</button>
+    a : {{ count.counter.current }}<br/>
+    <button @click="countHandler">+1</button>
     <h2>2.reactive操作響應式變數</h2>
-    <div>reactive用於多層物件，與ref差別在不用.value去取值設定</div>
-    <br/>
+    <div>reactive用於多層物件，與ref差別在不用.value去取值設定
+        <br/>
       點擊按鈕，數值會+1
-    <button @click="count2Handler">{{ count2.counter.current }}</button>
+    </div>
+    b : {{ count2.counter.current }}<br/>
+
+    <button @click="count2Handler">+1</button>
     <h2>3.computed複合數值計算</h2>
     <div>
-      用於複合數值組合計算，通常用來只讀，亦可改寫成getter/setter，以上為上面1.及2.兩個數值的總和
+      用於複合數值組合計算，通常用來只讀，亦可改寫成getter/setter，以上為上面a及b兩個數值的總和
     </div>
     <div>
       <b>sum count:{{ sumCount }}</b>
