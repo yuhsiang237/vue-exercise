@@ -7,16 +7,17 @@ https://cn.vuejs.org/api/reactivity-core.html
     <div>主要為操作ref之響應式操作</div>
     <h2>1.ref操作響應式變數</h2>
     <div>
-      ref用於單一值，若為物件建議可用reactive，差別在不用.value去取值設定<br/>
+      ref用於單一值，若為物件建議可用reactive，差別在不用.value去取值設定<br />
       點擊按鈕，數值會+1
     </div>
-    a : {{ count.counter.current }}<br/>
+    a : {{ count.counter.current }}<br />
     <button @click="countHandler">+1</button>
     <h2>2.reactive操作響應式變數</h2>
-    <div>reactive用於多層物件，與ref差別在不用.value去取值設定<br/>
+    <div>
+      reactive用於多層物件，與ref差別在不用.value去取值設定<br />
       點擊按鈕，數值會+1
     </div>
-    b : {{ count2.counter.current }}<br/>
+    b : {{ count2.counter.current }}<br />
 
     <button @click="count2Handler">+1</button>
     <h2>3.computed複合數值計算</h2>

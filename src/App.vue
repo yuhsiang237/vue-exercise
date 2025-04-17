@@ -21,6 +21,7 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/CustomComponent">客製化元件</RouterLink>
         <RouterLink to="/JSES6">JS ES6+常用操作</RouterLink>
         <RouterLink to="/CSSView">CSS常用操作</RouterLink>
+        <RouterLink to="/VueTestMe">VueTestMe</RouterLink>
       </nav>
     </div>
   </header>

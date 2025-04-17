@@ -31,13 +31,13 @@
       <div>
         <h3>Promise.all:並發呼叫，同時啟動，呼叫順序不一致，較快</h3>
         <button @click="callAPIByPromiseAll">呼叫</button>
-        <div v-html="callAPIByPromiseAllResultStr "></div>
+        <div v-html="callAPIByPromiseAllResultStr"></div>
       </div>
       <div>
         <h3>Await與Async:照順序呼叫，較慢</h3>
         <button @click="callAPIBySort">呼叫</button>
       </div>
-      <div  v-html="SortResultStr "></div>
+      <div v-html="SortResultStr"></div>
     </div>
   </div>
 </template>
@@ -112,13 +112,13 @@ export default {
       });
     };
 
-    const processAPIVersionData = (arr) =>{
+    const processAPIVersionData = (arr) => {
       let result = `一共呼叫${arr.length}隻API結果:<br/>`;
-      arr.forEach(x=>{
-        result += `名稱:${x.name},版本${x.version},JSON:${JSON.stringify(x)}。<br/>`
+      arr.forEach((x) => {
+        result += `名稱:${x.name},版本${x.version},JSON:${JSON.stringify(x)}。<br/>`;
       });
       return result;
-    }
+    };
 
     const SortResultStr = ref("");
 
@@ -127,9 +127,9 @@ export default {
       const response2 = await axios.get("/vue-exercise/API2.json");
       const response3 = await axios.get("/vue-exercise/API3.json");
       const resultArray = [];
-        resultArray.push(response1.data);
-        resultArray.push(response2.data);
-        resultArray.push(response3.data);
+      resultArray.push(response1.data);
+      resultArray.push(response2.data);
+      resultArray.push(response3.data);
       SortResultStr.value = processAPIVersionData(resultArray);
     };
 
